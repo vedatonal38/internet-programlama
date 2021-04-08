@@ -1,4 +1,3 @@
 # İNTERNET PROGRAMLAMA
 
-## Basit bir anket oluşturma
-- [Form](https://github.com/vedatonal38/internet-programlama/tree/main/0x01-form "Form")
+- HTML [form](https://github.com/vedatonal38/internet-programlama/tree/main/0x01-form "form") tag kullanarak basit bir anket oluşturma
