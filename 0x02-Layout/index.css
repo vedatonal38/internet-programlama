@@ -1,0 +1,269 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ccc;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.page {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.header {
+	position: relative;
+	width: 1000px;
+	height: 80px;
+	float: left;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.logo{
+	position: absolute;
+	top: 3px;
+	left: 25px;
+	width: 250px;
+}
+
+.logoblok {
+	width: auto;
+	height: 75px;
+}
+
+.action {
+	border: 1px solid red;
+	width: 50px;
+	height: 45px;
+}
+
+.navigationbar {
+	width: 1000px;
+	float: left;
+	margin: 0 auto;
+}
+
+.navigationbar nav {
+	text-align: center;
+}
+
+.navigationbar nav > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	background: #f1c40f;
+}
+
+.navigationbar nav > ul > li {
+	float: left;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.navigationbar nav > ul > li > a{
+	color: #2c3e50;
+}
+
+.navigationbar nav > ul > li:hover > a {
+	color: #fff;
+}
+
+.navigationbar nav > ul > li:hover {
+	background: #d74c3c;
+	border-radius: 5px 5px 0 0;
+}
+
+.navigationbar nav ul.d-menu {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 100%;
+	padding: 0;
+	z-index: 1;
+}
+
+.navigationbar nav ul.d-menu li {
+	background: #e74c3c;
+}
+
+.navigationbar nav ul.d-menu li a {
+	color: #fff;
+}
+
+.navigationbar nav ul.d-menu li:hover {
+	background: #c0392b;
+}
+
+.navigationbar nav ul.d-menu li:last-child {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.navigationbar nav ul.d-menu li {
+	display: none;
+}
+
+.navigationbar nav ul li:hover > ul.d-menu li {
+	display: block;
+}
+
+.leftcolumnwap {
+	width: 200px;
+	float: left;
+	margin: 0 auto;
+	background-color: #33ccff;
+}
+
+.rightcolumnwap {
+	width: 200px;
+	float: left;
+	margin: 0 auto;
+	background-color: #33ccff;
+}
+
+.leftcolumn, .rightcolumn {
+	padding-left: 10px;
+}
+
+.leftcolumn div.relativeTitle {
+	font-size: 14.5px;
+}
+
+div.relativeTitle{
+	position: relative;
+	bottom: 10px;
+	width: 180px;
+	height: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.relative {
+	position: relative;
+	width: 180px;
+	height: 90px;
+	border-top: 1px solid #000;
+}
+
+div.img {
+	position: absolute;
+	top: 5px;
+	right: 60%;
+	width: 75px;
+	height: 75px;
+}
+
+div.title {
+	position: absolute;
+	top: 5px;
+	right: 7px;
+	width: 100px;
+}
+
+div.title a {
+	color: #000;
+	font-size: 14px;
+}
+
+div.title p {
+	color: #111;
+	font-size: 10px;
+}
+
+.tablewap {
+	width: 600px;
+	float: left;
+	margin: 0 auto;
+	background: white;
+}
+
+.tablewap table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 4px solid #ccc;
+	border-right: 4px solid #ccc;
+}
+
+.tablewap table td {
+	width: 300px;
+  	border: 1px solid #ccc;
+}
+
+.tablewap table div.relativeTb {
+	position: relative;
+	height: 150px;
+}
+
+.tablewap table div.imgTb {
+	position: absolute;
+	top: 10px;
+	left: 3%;
+}
+
+.tablewap table div.titleTb {
+	position: absolute;
+	top: 10px;
+	left: 32%;
+	width: 200px;
+}
+
+.tablewap table div.titleTb a {
+	color: #000;
+	font-size: 20px;
+}
+
+.tablewap table div.titleTb p {
+	color: grey;
+	font-size:15px;
+}
+
+.tablewap table div.titleTb p a {
+	color: #ff9933;
+	font-size: 15px;
+}
+
+.tablewap table div.titleTb p a:hover {
+	color: #ff5050;
+}
+
+.footerwap {
+	width: 1000px;
+	float: left;
+	margin: 0 auto;
+	background-color: #66ff66;
+}
+
+.footer {
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding-left: 0;
+}
+
+.footer a {
+	color: red;
+	text-transform: uppercase;
+}
+
+
+.footer li {
+	float: left;
+	width: 30%;
+}
+
+.footer il:first-child {
+	margin-left: 0;
+}
