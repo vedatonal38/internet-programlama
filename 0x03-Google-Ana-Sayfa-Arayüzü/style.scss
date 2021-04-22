@@ -1,0 +1,175 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+$bg_color: white;
+$sign_in_color: #1a73e8;
+$sign_in_text_color: #fff;
+$buttonbg_color: #efefef;
+$section_button_color: #f8f9fa;
+$text_color: #666;
+$footer_bg_color: #f2f2f2;
+$h4_color: #eee;
+$footer_text_color: #5f6368;
+
+@mixin border($width, $style, $color, $b_radius) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+  border-radius: $b_radius;
+  -webkit-border-radius: $b_radius;
+  -moz-border-radius: $b_radius;
+  -ms-border-radius: $b_radius;
+  -o-border-radius: $b_radius;
+}
+
+.borders {
+  @include border(1px, solid, transparent, 3px);
+}
+
+@mixin font($size, $family, $style, $weight) {
+  font-size: $size;
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+}
+
+body {
+  background-color: $bg_color;
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 35px;
+    margin-top: 14px;
+    button {
+      background-color: $sign_in_color;
+      @include font(15px, Arial, normal, normal);
+      color: $sign_in_text_color;
+      margin-left: 7px;
+      @include border(1px, solid, $sign_in_color, 3px);
+      padding: 7px 10px;
+      width: 129px;
+      height: 35px;
+      &:hover {
+        background-color: #4285f4;
+      }
+    }
+    img {
+      width: 34px;
+      padding: 5px;
+      margin: auto 7px;
+    }
+    a {
+      padding: 5px 8px;
+      @include font(13px, Arial, normal, normal);
+      &:hover {
+        @include font(13px, Arial, none, bold);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .section {
+    flex: 1;
+    .g-logo {
+      display: block;
+      margin: 0px auto;
+      margin-top: 140px;
+    }
+    .section-box {
+      width: 580px;
+      margin: 0px auto;
+      position: relative;
+      margin-top: -8px;
+      text-align: center;
+      .s-input {
+        display: block;
+        @include border(1px, solid, #ddd, 25px);
+        padding: 13px;
+        padding-left: 45px;
+        width: 100%;
+        transition: box-shadow 100ms;
+        outline: none;
+      }
+
+      .s-img {
+        width: 20px;
+        opacity: 0.4;
+        position: absolute;
+        top: 50px;
+        left: 14px;
+      }
+      .keyboard-icon {
+        width: 24px;
+        position: absolute;
+        top: 46px;
+        right: -8px;
+      }
+
+      .mic-img {
+        width: 14px;
+        position: absolute;
+        top: 47px;
+        right: -37px;
+        margin-left: 5px;
+      }
+
+      .s-btn {
+        @extend .borders;
+        padding: 9px 15px;
+        color: $text_color;
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 28px;
+        cursor: pointer;
+        transition: box-shadow 100ms;
+
+        background-color: $section_button_color;
+        &:hover {
+          @include border(1px, solid, #aaa, 4px);
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: $footer_bg_color;
+    margin-top: 217px;
+    h4 {
+      color: $footer_text_color;
+      line-height: 39px;
+      @include font(15px, Arial, none, 400);
+      @include border(1px, solid, $h4_color, 1px);
+      padding-left: 39px;
+    }
+
+    a {
+      color: $footer_text_color;
+      display: inline-block;
+      padding: 12px 11.3px;
+      font-size: 14px;
+      @include font(15px, Arial, none, none);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .links {
+      border-top: 1px solid #ddd;
+      display: flex;
+      .link1 {
+        padding-left: 18.7px;
+        flex: 1;
+      }
+      .link2 {
+        padding-left: 18.7px;
+      }
+    }
+  }
+}
