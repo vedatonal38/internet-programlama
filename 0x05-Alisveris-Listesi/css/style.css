@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .ekle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  margin: 0 auto;
+  margin-top: 140px;
+  width: 500px;
+}
+
+body .ekle label {
+  padding-left: 55px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+}
+
+body .ekle #i1 {
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  width: 80%;
+  padding: 6px;
+  padding-left: 25px;
+  margin: auto;
+  -webkit-transition: -webkit-box-shadow 100ms;
+  transition: -webkit-box-shadow 100ms;
+  transition: box-shadow 100ms;
+  transition: box-shadow 100ms, -webkit-box-shadow 100ms;
+  outline: none;
+}
+
+body .ekle .btn1 {
+  margin: 10px 2px;
+  padding: 6px 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a8a1a1;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+body .ekle .pushBtn {
+  margin-left: 55px;
+}
+
+body .lst {
+  background-color: #ccc;
+  border-radius: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 15px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body .lst label {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+body .lst li {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+body .lst li .kal {
+  float: right;
+  margin-left: 25px;
+}
+/*# sourceMappingURL=style.css.map */
