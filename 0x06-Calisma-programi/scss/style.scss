@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+@mixin border($width, $style, $color, $b_radius) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+    border-radius: $b_radius;
+    -webkit-border-radius: $b_radius;
+    -moz-border-radius: $b_radius;
+    -ms-border-radius: $b_radius;
+    -o-border-radius: $b_radius;
+}  
+
+body {
+    background: rgb(0, 217, 255);
+    font-family: "Audiowide", sans-serif;
+    .app {
+        display: flex;
+        flex-flow: column;
+        
+        margin: auto;
+        width: 85vw;
+
+        header {
+            background: rgb(45, 255, 125);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+
+        .lists {
+            display: flex;
+            flex: 1;
+
+            .cvr {
+                border-left: 2px dashed rgb(149, 0, 248);
+                border-right: 2px dashed rgb(255, 0, 0);
+
+            }
+            
+            .tablo {
+                display: flex;
+                flex: 1;
+                flex-flow: column;
+
+                min-width: 150px;
+                max-width: 310px;
+                height: 630px;
+
+                margin: 25px auto;
+                .head {
+                    border-bottom: 2px dashed rgb(253, 0, 118);
+                    width: 100%;
+                    padding: 14px 20px;
+                    margin: auto;
+                    font-size: 15px;
+                }
+                .list {
+                    display: flex;
+                    flex-flow: column;
+                    flex: 1;
+
+                    overflow-y: auto;
+
+                    background-color: rgba(0, 0, 0, .1);
+                    padding: 8px; // item config
+                    transition: all 0.2s linear;
+                    
+                    .list-item { // Not ayarlamalar 
+                        background-color: #fff;
+                        border-radius: 8px;
+                        margin: 6px 15px;
+                        
+
+                        .hd { // baslik ayarlamalar
+                            border-bottom: 2px solid rgb(255, 196, 0);
+                            font-weight: 900;
+                            margin: 10px;
+                            margin-bottom: 0;
+                            padding-left: 7px;
+                            padding-bottom: 3px;
+                        }
+                        .acikla { // aciklamalar ayarlamalar 
+                            white-space: normal;
+                            height: 85px;
+                            overflow: auto;
+                            font-family: "Times New Roman", Times, serif;
+                            font-size:  14px;
+                            margin: 10px;
+                            margin-top: 0;
+                            padding-left: 7px;
+                            padding-bottom: 3px;
+                        }
+                        .date { // tarihi ayarlamalar
+                            display: list-item;
+                            font-style: italic;
+                            font-family: system-ui;
+//                            margin: 0px 175px;
+                            text-align: right;
+                            padding-right: 10px;
+                            height: 23px;
+                        }
+                        //
+                    }
+                }
+            }
+            .ekle {
+                background-color: rgb(121, 121, 194);
+                width: 95%;
+                margin: 25px 5px;
+                // input
+                label {
+                    display: list-item;
+                    font-size: 35px;
+                    height: 45px;
+                    text-align: center;
+                }
+                .form-control {
+                    display: block;
+                    @include border(1px, solid, #ddd, 5px);
+                    width: 80%;
+                    padding: 8px;
+                    padding-left: 15px;
+                    margin: auto;
+                    margin-bottom: 5px;
+                    transition: box-shadow 100ms;
+                    outline: none;
+                }
+                #acikla {
+                    resize: none;
+                }
+                .btn1 {
+                    width: 80%;
+                    margin: 5px 25px;
+                    padding: 6px 25px;
+                    @include border(3px, solid, rgb(168, 161, 161), 25px);
+                }
+            }
+            .copluk {                    border: 1px solid rgb(0, 0, 0);
+
+                background: url("../img/kapalıCop1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 90%;
+                height: 250px;
+                margin: 5px 5px;
+            }
+        }
+    }
+}

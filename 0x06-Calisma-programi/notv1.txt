@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+
+
+
+id              divId           head         detail
+foo (default)   00                head1      p1                   arr = {"id": "foo", "divId": "00", "head": "head1", "detail": "p1"}
+                                //
+                                id çek
+                                event id çek
+                                update yap
+                                yani
+                                    id = event id
+                                //
+foo1            00              head1      p1                   arr = {"id": "foo1", "divId": "00", "head": "head1", "detail": "p1"}
+
+
+
+
+
+
+1,2,6,7 sabit diğerleri yapına durum göre yer değiştiri
+
+1 > dragstart       Kullanıcı bir öğeyi sürüklemeye başladığında olay meydana gelir.
+2 > drag            Olay, bir öğe sürüklendiğinde meydana gelir. 
+
+3 > dragenter       sürüklenen eleman düşme hedefine girdiğinde olay meydana gelir.
+4 > dragover        Olay, sürüklenen eleman düşme hedefi bittiğinde meydana gelir.
+5 > dragLeave       Olay, sürüklenen eleman damla hedefinden ayrıldığında meydana gelir.
+
+6 > dragend         Olay, kullanıcı bir öğeyi sürüklemeyi tamamladığında ortaya çıkar.
+7 > drop            Olay, sürüklenen eleman düşme hedefine düştüğünde meydana gelir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JSON
+    key  :  value -> type: string
+    data:"[
+        {"id":"foo","divId":"8bc7-ad2c-40bd-b49b-8e0a","head":"a1","detail":"q1","date":"29/05/2021"},
+        {"id":"foo","divId":"0f16-c080-4a70-ac4c-3071","head":"a1","detail":"q1","date":"29/05/2021"}]"
+
+
+string -> object cevirdik
+dict:obj
+[{"id":"foo","head":"a2","detail":"q1","date":"29/05/2021"},{"id":"foo","head":"a","detail":"q1","date":"29/05/2021"}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

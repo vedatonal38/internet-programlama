@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calışma Programi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>T A K I M P R O J E S İ</h1>
+        </header>
+        <div class="lists">
+            <div class="tablo cvr">
+                <div class="head">BEKLEYEN GÖREVLER</div>
+                <div class="list" id="foo">
+                    <!--  
+                    <div class="list-item" draggable="true">
+                        <p class="hd">Head p1</p>
+                        <p class="acikla">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eaque eveniet, voluptas perferendis quos voluptate nulla reiciendis sed molestiae exercitationem hic eligendi labore doloremque eius culpa facilis ipsa debitis? Vero.</p>
+                        <date class="date">29/10/2021</date>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="tablo cvr">
+                <div class="head">DEVAM EDENLER</div>
+                <div class="list" id="foo1"></div>
+            </div>
+            <div class="tablo cvr">
+                <div class="head">TAMAMLANANLAR</div>
+                <div class="list" id="foo2"></div>
+            </div>
+            <div class="tablo">
+                <div class="ekle">
+
+                    <label>Görev Ekle</label>
+                    <input type="text" class="form-control" name="header0" id="hdr" placeholder="Başlık">
+                    <small></small>
+                    <textarea id="acikla" class="form-control" name="header1" rows="5" cols="30" placeholder="Açıklama"></textarea>
+                    <input type="text" class="form-control" name="bitis" id="bitis" placeholder="Bitiş Tarihi (dd/mm/yyyy)" onfocus="(this.type='date')">
+
+                    <input class="btn1" type="button" value="Ekle" onclick="push()">
+                    <input class="btn1" type="button" value="Temizle" onclick="del()">
+                </div>
+                <div class="copluk"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/transport.js"></script>
+    <script src="js/add.js"></script>
+</body>
+</html>
