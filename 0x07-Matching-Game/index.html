@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- HAZIR CSS DOSYALARI IMPORT EDİYOR -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> <!-- ICON ERİSİM -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda"> <!-- FAMİLY-CODE > latin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <!-- https://materializecss.com/
+         hazır front-end framework materialize css  
+    -->
+    <!-- LOCAL HOST DAKİ CSS DOSYALARI IMPORT -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- RESİM/ICON -->
+    <link rel="icon" href="img/memory-game-logo.jpg">
+    <!-- JAVASCRIT DOSYALARI IMPORT EDİYOR -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- jQuery kütüphanesini import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> <!-- CSS dezavantajlarının ortadan kalkmasıyla, şimdi JavaScript alanının kendisinde Popper'a geçiyoruz. -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ryanwaite28.github.io/script-store/js/stop-watch.js"></script> <!-- süre ile ilgili fonksiyon -->
+    <!-- LOCAL DEKİ JS -->
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="middle-box"> <!-- local css -->
+        <header>
+            <h4 class="text-center">Matching Game</h4> <!-- local css -->
+        </header>
+        <section class="score-panel"> <!-- local css -->
+            <ul id="hearts-list" class="hearts"> <!-- class ".stars / .hearts" -> local css && id "stars-list / hearts-list" -> -->
+                <li><i class="fa fa-heart"></i></li> <!-- font-awesome css deki iconlar -->
+                <li><i class="fa fa-heart"></i></li>
+                <li><i class="fa fa-heart"></i></li>
+            </ul>
+
+            <span id="grade" class="moves"></span> <!-- js yapısı ile ilgili olabilir-->
+
+            <span style="margin: 0px 20px;"> 
+                <strong><span id="moves-text"></span></strong> Moves
+            </span>
+
+            <span style="margin: 0px 20px;">
+                <strong><span id="time-text"></span></strong>
+            </span>
+            
+            <span style="margin: 0px 20px;">
+                <strong><span id="msg-text"></span></strong> <!-- -->
+            </span>
+        
+            <div id="hint-btn" class="hint">
+                <span>
+                    <i class="fa fa-question-circle"></i>
+                    Hint
+                </span>
+            </div>
+
+            <div id="info-btn" class="hint"> <!-- class ".hint" -> local css && id "info-btn" js -->
+                <span>
+                    <i class="fa fa-info"></i> <!-- font-awesome css deki iconlar -->
+                    Info
+                </span>
+            </div>
+            
+            <div id="reset-btn" class="restart"> <!-- class ".restart" -> local css && id "reset-btn" js -->
+                <span>
+                    <i class="fa fa-repeat"></i> <!-- font-awesome css deki iconlar -->
+                    Reset
+                </span>
+            </div>
+        </section>
+        
+        <ul id="deck" class="deck" ></ul> <!-- bu kısmım oyunun alan o zaman li kısmımları js oluşacak gibi görünüyor -->
+    </div>
+
+    <!-- oyunu bittiş panel -->
+    <div id="game_modal" class="modal"> <!-- class "modal" materialize css -->
+        <!-- Oyun bittiginde class "modal" icinde olan display none js tarafından degisiyor -->
+        <div class="modal-content"> <!-- class "modal-content" materialize css -->
+          <h4>Congrats!</h4>
+          <h5>Game Results</h5>
+       
+          <p><strong>Time:</strong> <span id="time_results"></span></p>
+          <p><strong>Moves:</strong> <span id="moves_results"></span></p>
+          <p><strong>Grade:</strong> <span id="grade_results"></span></p>
+        </div>
+        <div class="modal-footer"> <!-- dışarıdan import edimiz materialize.min.js dosya event özellileri alıyor  -->
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a> <!-- dragend,mouseleave,mouseup -->
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal_reset_btn">Replay</a> <!-- dragend,mouseleave,mouseup -->
+        </div>
+    </div>
+
+</body>
+</html>

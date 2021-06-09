@@ -1,0 +1,128 @@
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  body {
+    font-family: "Coda", cursive;
+
+    .middle-box {
+      width: 660px;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+
+      .text-center {
+//        border: 1px solid red;
+        text-align: center;
+      }
+
+      .score-panel {
+//        border: 2px solid yellowgreen;
+        text-align: left;
+        /* float: right; */
+        width: 625px;
+        margin-bottom: 10px;
+        max-width: 100%;
+        .hearts {
+          padding: 0;
+          display: inline-block;
+          margin: 0 5px 0 0;
+          li {
+            list-style: none;
+            display: inline-block;
+          }
+        }
+        .restart,
+        .hint {
+          margin-left: 15px;
+          float: right;
+          cursor: pointer;
+        }
+      }
+
+      .deck {
+        width: 660px;
+        max-width: 100%;
+        /* min-height: 680px; */
+        background: linear-gradient(120deg, #cc02c2 0%, #7ec1cd 100%);
+        padding: 32px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 3px 0 rgba(46, 61, 73, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 3em;
+        .card {
+          height: 125px;
+          width: 125px;
+          background: #2e3d49;
+          font-size: 0; // iconları küçüktüyo
+          color: #ffffff; // iconları beyaz yapıyor
+          border-radius: 8px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+        }
+
+        .card.open {
+          transform: rotateY(0);
+          background: #02b3e4;
+          cursor: default;
+        }
+        .card.show {
+          font-size: 33px;
+        }
+        .card.match {
+          cursor: default;
+          background: #02ccba;
+          font-size: 33px;
+        }
+      }
+      #deck {
+        padding: 32px;
+        //  margin-left: auto;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .deck .card {
+    height: 105px;
+    width: 105px;
+  }
+  #deck {
+    padding: 32px;
+    min-height: inherit;
+  }
+}
+
+@media (max-width: 487px) {
+  .deck .card {
+    height: 65px;
+    width: 65px;
+  }
+  #deck {
+    padding: 28px;
+    min-height: inherit;
+  }
+}
+
+@media (max-width: 320px) {
+  .deck .card {
+    height: 50px;
+    width: 50px;
+  }
+  #deck {
+    padding: 24px;
+    min-height: inherit;
+  }
+}
