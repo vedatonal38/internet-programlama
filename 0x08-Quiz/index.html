@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-sm bZcontainer">
+        <div class="row top">
+            <!-- nav kısmı -->
+            <p class="text-break text-uppercase fs-3">Bilgi yarışması</p>
+        </div>
+        <div class="row section">
+            <div class="col-sm-2 solDiv">
+                <div class="row score">
+                    <p>Puan : </p>
+                    <p id="puan">0 / 0</p>
+                </div>
+                <div class="row timer">
+                    <p class="krnmtr">Kronometre :</p>
+                    <div class="timer--clock">
+                        <div class="minutes-group clock-display-grp"> <!-- dakika -->
+                            <div class="first number-grp">
+                                <div class="number-grp-wrp">
+                                    <div class="num num-0">
+                                        <p>0</p>
+                                    </div>
+                                    <div class="num num-1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="num num-2">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="num num-3">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="num num-4">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="num num-5">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="num num-6">
+                                        <p>6</p>
+                                    </div>
+                                    <div class="num num-7">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="num num-8">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="num num-9">
+                                        <p>9</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second number-grp">
+                                <div class="number-grp-wrp">
+                                    <div class="num num-0">
+                                        <p>0</p>
+                                    </div>
+                                    <div class="num num-1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="num num-2">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="num num-3">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="num num-4">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="num num-5">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="num num-6">
+                                        <p>6</p>
+                                    </div>
+                                    <div class="num num-7">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="num num-8">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="num num-9">
+                                        <p>9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clock-separator">
+                            <p>:</p>
+                        </div>
+                        <div class="seconds-group clock-display-grp"><!-- saniye -->
+                            <div class="first number-grp">
+                                <div class="number-grp-wrp">
+                                    <div class="num num-0">
+                                        <p>0</p>
+                                    </div>
+                                    <div class="num num-1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="num num-2">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="num num-3">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="num num-4">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="num num-5">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="num num-6">
+                                        <p>6</p>
+                                    </div>
+                                    <div class="num num-7">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="num num-8">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="num num-9">
+                                        <p>9</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second number-grp">
+                                <div class="number-grp-wrp">
+                                    <div class="num num-0">
+                                        <p>0</p>
+                                    </div>
+                                    <div class="num num-1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="num num-2">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="num num-3">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="num num-4">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="num num-5">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="num num-6">
+                                        <p>6</p>
+                                    </div>
+                                    <div class="num num-7">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="num num-8">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="num num-9">
+                                        <p>9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div id="imagesVideos" class="row imageDiv">
+                    <img id="pic" class="iv" src="./img/quiz_intro.png">
+                </div>
+                <div class="row">
+                    <div class="detailDiv">
+                        <p id="soru">Kurallar :</p>
+                        <p id="soru_metin" style="margin-top: -15px;">1)Her soru için 10 sn süre vardır<br> 2)Her bir doğru cevap bir puana
+                            denktir<br> 3)Her soru için sadece bir doğru cevap vardır</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 sagDiv">
+                <div class="row" style="border-bottom: 2px solid black;">
+                    <p id="cevap"></p>
+                </div>
+                <div class="row" id="buttons">
+                    <button id="startBtn" class="btn defuatBtn" style = "color:white;">Oyun başlat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

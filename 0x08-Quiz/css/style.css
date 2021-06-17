@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-image: url("/img/background.png");
+}
+
+body .bZcontainer {
+  margin-top: 15px;
+  background-color: #008C8A;
+  border-radius: 12px;
+}
+
+body .bZcontainer .top {
+  border-bottom: 3px solid black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+body .bZcontainer .section {
+  margin-top: 15px;
+}
+
+body .bZcontainer .section .solDiv {
+  padding-top: 10px;
+}
+
+body .bZcontainer .section .solDiv .score {
+  color: #DDD2D2;
+  width: 150%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body .bZcontainer .section .solDiv .score #puan {
+  margin-top: -10px;
+  padding-left: 25px;
+  font-size: 25px;
+}
+
+body .bZcontainer .section .solDiv .timer {
+  height: 65px;
+  display: block;
+  color: #DDD2D2;
+  position: absolute;
+}
+
+body .bZcontainer .section .solDiv .timer * {
+  cursor: default;
+}
+
+body .bZcontainer .section .solDiv .timer .krnmtr {
+  width: 100%;
+  font-size: 15px;
+}
+
+body .bZcontainer .section .solDiv .timer--clock {
+  width: 100%;
+  height: 60%;
+  position: relative;
+  padding-left: 15px;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+body .bZcontainer .section .solDiv .timer--clock .clock-display-grp {
+  width: 100%;
+  position: relative;
+}
+
+body .bZcontainer .section .solDiv .timer--clock .clock-display-grp .number-grp {
+  width: auto;
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+
+body .bZcontainer .section .solDiv .timer--clock .clock-display-grp .number-grp .number-grp-wrp {
+  width: 100%;
+  position: relative;
+}
+
+body .bZcontainer .section .solDiv .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num {
+  width: 100%;
+  position: relative;
+}
+
+body .bZcontainer .section .solDiv .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num p {
+  width: 100%;
+  display: table;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+body .bZcontainer .section .solDiv .timer .clock-separator {
+  width: auto;
+  height: auto;
+  float: left;
+  display: block;
+}
+
+body .bZcontainer .section .solDiv .timer .clock-separator p {
+  width: auto;
+  height: auto;
+  display: table;
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+body .bZcontainer .section .imageDiv {
+  height: 505px;
+}
+
+body .bZcontainer .section .imageDiv img,
+body .bZcontainer .section .imageDiv video {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+body .bZcontainer .section .detailDiv {
+  border-radius: 15px;
+  height: 125px;
+  width: 96%;
+  margin: auto;
+  margin-top: 7px;
+  padding-top: 15px;
+  padding-left: 25px;
+  background-color: #699174;
+}
+
+body .bZcontainer .section .detailDiv #soru {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+body .bZcontainer .section .detailDiv #soru_metni {
+  font-size: 18px;
+}
+
+body .bZcontainer .section .sagDiv {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body .bZcontainer .section .sagDiv .dogruBtn {
+  background: #42ae26;
+}
+
+body .bZcontainer .section .sagDiv .yanlisBtn {
+  background: #e11225;
+}
+
+body .bZcontainer .section .sagDiv .btn {
+  height: 100%;
+  margin-top: 25px;
+  border: 2px solid #60648d;
+  border-radius: 5px;
+}
+
+body .bZcontainer .section .sagDiv .defuatBtn {
+  background: #285CE6;
+}
+
+body .bZcontainer .section .sagDiv .defuatBtn:hover {
+  background: #0f6c82;
+}
+/*# sourceMappingURL=style.css.map */

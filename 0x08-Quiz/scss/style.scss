@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+$score_font_size_text: 20px;
+$score_font_size: 25px;
+$score_font_weight: bold;
+//
+$kronometre_width: 100%;
+$kronometre_height: 65px;//65
+$kronometre_font_size_text: 15px;
+$kronometre_font_size: 25px;
+$kronometre_line_heigth: 33px;
+$kronometre_font_weight: bold;
+
+body {
+  background-image: url("/img/background.png");
+  .bZcontainer {
+    margin-top: 15px;//#41729F
+    background-color: #008C8A;
+    border-radius: 12px;
+    .top {
+      border-bottom: 3px solid black;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .section {
+      margin-top: 15px;
+      .solDiv {
+        padding-top: 10px;
+        .score {
+          color:#DDD2D2;
+          width: 150%;
+          font-size: $score_font_size_text;
+          font-weight: $score_font_weight;
+          #puan {
+            margin-top: -10px;
+            padding-left: 25px;
+            font-size: $score_font_size;
+          }
+        }
+
+        .timer {
+          height: $kronometre_height;
+          display: block;
+          color:#DDD2D2;
+          position: absolute;
+          * {
+            cursor: default;
+          }
+
+          .krnmtr {
+            
+            width: 100%;
+            font-size: $kronometre_font_size_text;
+          }
+
+          &--clock {
+            //              background: aqua;
+            width: 100%;
+            height: 60%;
+            position: relative;
+            padding-left: 15px;
+            overflow: hidden;
+            margin-top: -20px;
+
+            .clock-display-grp {
+              width: 100%;
+              position: relative;
+
+              .number-grp {
+                //                  background: blue;
+                width: auto;
+                display: block;
+                float: left;
+                overflow: hidden;
+
+                .number-grp-wrp {
+                  width: 100%;
+                  position: relative;
+
+                  .num {
+                    width: 100%;
+                    position: relative;
+                    p {
+                      width: 100%;
+                      display: table;
+                      font-size: $kronometre_font_size;
+                      font-weight: $kronometre_font_weight;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .clock-separator {
+            //              background: red;
+            width: auto;
+            height: auto;
+            float: left;
+            display: block;
+            // height: 156px;
+            p {
+              // :
+              width: auto;
+              height: auto;
+              display: table;
+              font-size: $kronometre_font_size;
+              line-height: $kronometre_line_heigth;
+              font-weight: $kronometre_font_weight;
+            }
+          }
+        }
+      }
+
+      .imageDiv {
+        height: 505px;
+
+        img,
+        video {
+          border-radius: 30px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .detailDiv {
+        border-radius: 15px;
+        height: 125px;
+        width: 96%;
+        margin: auto;
+        margin-top: 7px;
+        padding-top: 15px;
+        padding-left: 25px;
+        background-color: #699174;
+
+        #soru {
+          font-weight: bold;
+          font-size: 22px;
+        }
+        #soru_metni {
+          font-size: 18px;
+        }
+      }
+      .sagDiv {
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .dogruBtn {
+          background: #42ae26;
+        }
+        .yanlisBtn {
+          background: #e11225;
+        }
+        .btn {
+          height: 100%;
+          margin-top: 25px;
+          border: 2px solid #60648d;
+          border-radius: 5px;
+        }
+        .defuatBtn {
+          background: #285CE6;
+          &:hover {
+            background: #0f6c82;
+          }
+        }
+      }
+    }
+  }
+}
